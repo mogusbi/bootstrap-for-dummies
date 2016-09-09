@@ -1,11 +1,25 @@
 {
-  "name": "starter",
+  "name": "bootstrap-for-dummies",
   "version": "1.0.0",
-  "description": "Starter repository",
+  "description": "Bootstrap presentation",
   "author": "Mo Gusbi",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/mogusbi/starter.git"
+    "url": "https://github.com/mogusbi/bootstrap-for-dummies.git"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-starter": "file:///Volumes/Data/Users/mo/Repos/gulp-starter",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development gulp",
+    "start-production": "NODE_ENV=production gulp",
+    "reload": "npm i --save-dev /Volumes/Data/Users/mo/Repos/gulp-starter"
   }
 }

@@ -1,0 +1,59 @@
+{% macro jumbotron(title) %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1>{{ title }}</h1>
+    </div>
+  </div>
+{% endmacro %}}
+
+{% macro media(title, icon, link, url) %}
+  <article class="media">
+    {% if icon %}
+      <div class="media-left">
+        <i class="{{ icon }}" aria-hidden="true"></i>
+      </div>
+    {% endif %}
+    <div class="media-body">
+      <h4 class="media-heading">{{ title }}</h4>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus lectus, fermentum sit amet enim rutrum, vestibulum eleifend diam. Ut egestas aliquam nulla ut ultricies. Vivamus ipsum nisi, interdum et pretium gravida, eleifend id.</p>
+
+      <a href="{{ url }}">{{ link }}</a>
+    </div>
+  </article>
+{% endmacro %}
+
+{% macro careHome(home, location, distance, phone, image, link, url) %}
+  <article class="panel panel-default">
+    <img class="img-responsive" src="{{ image }}" alt="{{ home }} - {{ location }}">
+    <div class="panel-heading">{{ home }}</div>
+    <div class="panel-body">
+      <p>{{ location }}</p>
+
+      <ul>
+        <li>{{ distance }}</li>
+        <li>{{ phone }}</li>
+      </ul>
+    </div>
+    <div class="panel-footer">
+      <a class="btn btn-block btn-lg btn-default" href="{{ url }}">{{ link }}</a>
+    </div>
+  </article>
+{% endmacro %}
+
+{% macro article(title, lead, image, link, url) %}
+  <article class="row">
+    <div class="col-xs-12 col-sm-4">
+      <img class="img-responsive" src="{{ image }}" alt="{{ title }} - {{ lead }}">
+    </div>
+    <div class="col-xs-12 col-sm-8">
+      <h3>{{ title }}</h3>
+
+      <p>{{ lead }}</p>
+
+      <p class="visible-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed leo nec magna tincidunt laoreet. Nulla non nibh justo. Nullam vitae eleifend lectus. Nulla malesuada odio odio, ac placerat magna semper ac. Sed a dolor ut nunc sagittis porta et vel odio...</p>
+
+      <a href="{{ url }}">{{ link }}</a>
+    </div>
+  </article>
+{% endmacro %}

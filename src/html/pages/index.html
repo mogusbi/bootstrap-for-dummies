@@ -1,5 +1,65 @@
 {% extends 'layouts/main.html' %}
+{% from 'macros/components.html' import jumbotron, media, careHome, article %}
 
 {% block content %}
-  <h1>Hello world</h1>
+  {{ jumbotron('HC-One specialises in Dementia, Nursing, Residential and Specialist care with homes throughout the UK.') }}
+
+  <div class="container">
+    <div class="row">
+      <div class="hidden-xs hidden-sm col-md-3">
+        <label for="search">Find a care home</label>
+      </div>
+      <div class="col-xs-12 col-md-9">
+        <div class="input-group input-group-lg">
+          <input id="search" class="form-control" type="search" placeholder="Location">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Search</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        {{ media('About HC-One', false, 'Find out more', '#') }}
+      </div>
+      <div class="col-xs-12 col-md-6">
+        {{ media('Work for us', false, 'Find out more', '#') }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        {{ media('Our care', false, 'Find out more', '#') }}
+      </div>
+      <div class="col-xs-12 col-md-6">
+        {{ media('Help & advice', false, 'Find out more', '#') }}
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="text-center">Featured care homes</h2>
+
+    <div class="row">
+      <div class="col-xs-12 col-lg-4">
+        {{ careHome('Stoneleigh', 'Stanley, County Durham', '8.2 miles from Durham', '0333 130 7714', '/assets/img/care-home.png', 'View care home', '#') }}
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        {{ careHome('Bishopsgate Lodge', 'Bishop Auckland, County Durham', '8.6 miles from Durham', '0333 130 7714', '/assets/img/care-home.png', 'View care home', '#') }}
+      </div>
+      <div class="col-xs-12 col-lg-4">
+        {{ careHome('Washington Lodge Care Home', 'Washington, Tyne and Wear', '9.1 miles from Durham', '0333 130 7714', '/assets/img/care-home.png', 'View care home', '#') }}
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="text-center">News and events</h2>
+
+    {{ article('Tea and cake at Lothian House', 'Spennymoor, Durham', '/assets/img/care-home.png', 'Find out more', '#') }}
+
+    {{ article('Tea at Tenlands', 'Ferryhill, Durham', '/assets/img/care-home.png', 'Find out more', '#') }}
+  </section>
 {% endblock %}

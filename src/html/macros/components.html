@@ -18,7 +18,7 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus lectus, fermentum sit amet enim rutrum, vestibulum eleifend diam. Ut egestas aliquam nulla ut ultricies. Vivamus ipsum nisi, interdum et pretium gravida, eleifend id.</p>
 
-      <a href="{{ url }}">{{ link }}</a>
+      <a href="{{ url }}">{{ link }} <i class="icon-long-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
 {% endmacro %}
@@ -30,9 +30,9 @@
     <div class="panel-body">
       <p>{{ location }}</p>
 
-      <ul>
-        <li>{{ distance }}</li>
-        <li>{{ phone }}</li>
+      <ul class="list-unstyled">
+        <li><i class="icon-location" aria-hidden="true"></i> {{ distance }}</li>
+        <li><i class="icon-telephone" aria-hidden="true"></i> {{ phone }}</li>
       </ul>
     </div>
     <div class="panel-footer">
@@ -53,7 +53,7 @@
 
       <p class="visible-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed leo nec magna tincidunt laoreet. Nulla non nibh justo. Nullam vitae eleifend lectus. Nulla malesuada odio odio, ac placerat magna semper ac. Sed a dolor ut nunc sagittis porta et vel odio...</p>
 
-      <a href="{{ url }}">{{ link }}</a>
+      <a href="{{ url }}">{{ link }} <i class="icon-long-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
 {% endmacro %}

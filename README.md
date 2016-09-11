@@ -11,4 +11,4 @@ Looking at the brand guidelines and seeing how you can start making the site loo
 Adding more components using existing helpers (and using SCSS source code to work out how to do it)
 
 # Part four
-Using helper utilities, such as .sr-only, .hidden-* and .visible-*
+Using helper utilities, such as .sr-only, .h*, .hidden-* and .visible-*

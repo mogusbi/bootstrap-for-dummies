@@ -12,3 +12,6 @@ Adding more components using existing helpers (and using SCSS source code to wor
 
 # Part four
 Using helper utilities, such as .sr-only, .h*, .hidden-* and .visible-*
+
+# Part five
+Put the finishing touches to your page by adding in your own styles, because Bootstrap can do the heavy lifting for you but it can't build your entire site

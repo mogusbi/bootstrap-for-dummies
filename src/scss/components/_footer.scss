@@ -1,0 +1,31 @@
+.global-footer {
+  background-color: $footer-bg;
+  color: $footer-colour;
+  padding: $padding-large-horizontal 0;
+
+  .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    > li {
+      margin: 0 0 $padding-base-horizontal 0;
+    }
+
+    a {
+      color: $footer-colour;
+    }
+
+    @media (min-width: $screen-md-min) {
+      text-align: left;
+
+      > li {
+        display: inline-block;
+        line-height: $line-height-large;
+        margin: 0 $padding-large-vertical 0 0;
+        padding: $padding-base-horizontal 0;
+      }
+    }
+  }
+}

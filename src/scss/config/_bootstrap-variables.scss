@@ -11,16 +11,16 @@
 
 // $gray-base:              #000
 // $gray-darker:            lighten($gray-base, 13.5%) // #222
-// $gray-dark:              lighten($gray-base, 20%)   // #333
-// $gray:                   lighten($gray-base, 33.5%) // #555
-// $gray-light:             lighten($gray-base, 46.7%) // #777
+$gray-dark: #666b73;
+$gray: #ebeded;
+$gray-light: #f7f7f7;
 // $gray-lighter:           lighten($gray-base, 93.5%) // #eee
 
-// $brand-primary:         darken(#428bca, 6.5%) // #337ab7
-// $brand-success:         #5cb85c
+$brand-primary: #f15f22;
+$brand-success: #3e6e49;
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
-// $brand-danger:          #d9534f
+$brand-danger: #b04646;
 
 
 //== Scaffolding
@@ -44,20 +44,20 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
-// $font-family-serif:       Georgia, "Times New Roman", Times, serif
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-serif: "Roboto Slab", serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
 // $font-family-base:        $font-family-sans-serif
 
-// $font-size-base:          14px
+$font-size-base: 18px;
 // $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
 
-// $font-size-h1:            floor(($font-size-base * 2.6)) // ~36px
-// $font-size-h2:            floor(($font-size-base * 2.15)) // ~30px
-// $font-size-h3:            ceil(($font-size-base * 1.7)) // ~24px
-// $font-size-h4:            ceil(($font-size-base * 1.25)) // ~18px
+$font-size-h1: 42px;
+$font-size-h2: 32px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
 // $font-size-h5:            $font-size-base
 // $font-size-h6:            ceil(($font-size-base * 0.85)) // ~12px
 
@@ -67,10 +67,10 @@
 // $line-height-computed:    floor(($font-size-base * $line-height-base)) // ~20px
 
 //** By default, this inherits from the `<body>`.
-// $headings-font-family:    inherit
+$headings-font-family: $font-family-serif;
 // $headings-font-weight:    500
 // $headings-line-height:    1.1
-// $headings-color:          inherit
+$headings-color: #22161a;
 
 
 //== Iconography
@@ -108,9 +108,9 @@
 // $line-height-large:         1.3333333 // extra decimals for Win 8.1 Chrome
 // $line-height-small:         1.5
 
-// $border-radius-base:        4px
-// $border-radius-large:       6px
-// $border-radius-small:       3px
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
 
 //** Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff
@@ -148,11 +148,11 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-// $btn-font-weight:                normal
+$btn-font-weight: bold;
 
-// $btn-default-color:              #333
-// $btn-default-bg:                 #fff
-// $btn-default-border:             #ccc
+$btn-default-color: #fff;
+$btn-default-bg: #51475b;
+$btn-default-border: #51475b;
 
 // $btn-primary-color:              #fff
 // $btn-primary-bg:                 $brand-primary
@@ -371,12 +371,12 @@
 // $navbar-collapse-max-height:       340px
 
 // $navbar-default-color:             #777
-// $navbar-default-bg:                #f8f8f8
+$navbar-default-bg: #fff;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%)
 
 // Navbar links
 // $navbar-default-link-color:                #777
-// $navbar-default-link-hover-color:          #333
+$navbar-default-link-hover-color: $brand-primary;
 // $navbar-default-link-hover-bg:             transparent
 // $navbar-default-link-active-color:         #555
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%)
@@ -384,7 +384,7 @@
 // $navbar-default-link-disabled-bg:          transparent
 
 // Navbar brand label
-// $navbar-default-brand-color:               $navbar-default-link-color
+$navbar-default-brand-color: $brand-primary;
 // $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%)
 // $navbar-default-brand-hover-bg:            transparent
 
@@ -715,12 +715,12 @@
 // $panel-border-radius:         $border-radius-base
 
 //** Border color for elements within panels
-// $panel-inner-border:          #ddd
-// $panel-footer-bg:             #f5f5f5
+$panel-inner-border: transparent;
+$panel-footer-bg: #fff;
 
 // $panel-default-text:          $gray-dark
 // $panel-default-border:        #ddd
-// $panel-default-heading-bg:    #f5f5f5
+$panel-default-heading-bg: #fff;
 
 // $panel-primary-text:          #fff
 // $panel-primary-border:        $brand-primary

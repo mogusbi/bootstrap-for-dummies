@@ -1,0 +1,16 @@
+.jumbotron {
+  margin: 0;
+
+  .h1,
+  h1 {
+    margin: 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: ($searchbar-height + $jumbotron-padding);
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding-bottom: ($searchbar-height + ($jumbotron-padding * 1.6));
+  }
+}

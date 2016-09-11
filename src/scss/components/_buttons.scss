@@ -1,0 +1,7 @@
+.btn-search-bar {
+  @include button-variant($input-color, $input-bg, $input-border);
+}
+
+.btn-social-media {
+  @include button-variant($footer-colour, $footer-bg, $footer-bg);
+}

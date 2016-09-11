@@ -1,0 +1,13 @@
+.subscribe {
+  background-color: $gray;
+  border-top: $hr-border;
+  padding: $padding-large-horizontal 0;
+
+  .icon-sign-up-to-newsletter {
+    margin: 0 $padding-large-vertical 0 0;
+  }
+
+  .h4 {
+    margin-bottom: $padding-large-horizontal;
+  }
+}

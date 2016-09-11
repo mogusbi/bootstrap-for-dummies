@@ -51,8 +51,8 @@ $font-family-serif: "Roboto Slab", serif;
 // $font-family-base:        $font-family-sans-serif
 
 $font-size-base: 18px;
-// $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
-// $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
+$font-size-large: 20px;
+$font-size-small: 16px;
 
 $font-size-h1: 42px;
 $font-size-h2: 32px;
@@ -854,7 +854,7 @@ $panel-default-heading-bg: #fff;
 //** Horizontal offset for forms and lists.
 // $component-offset-horizontal: 180px
 //** Text muted color
-// $text-muted:                  $gray-light
+$text-muted: $gray-dark;
 //** Abbreviations and acronyms border color
 // $abbr-border-color:           $gray-light
 //** Headings small color
